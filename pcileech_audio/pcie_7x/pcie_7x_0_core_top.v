@@ -81,7 +81,7 @@ module pcie_7x_0_core_top # (
   parameter         AER_CAP_MULTIHEADER = "FALSE",
   parameter [11:0]  AER_CAP_NEXTPTR = 12'h140,
   parameter [23:0]  AER_CAP_OPTIONAL_ERR_SUPPORT = 24'h000000,
-  parameter         AER_CAP_ON = "TRUE",
+  parameter         AER_CAP_ON = "FALSE",
   parameter         AER_CAP_PERMIT_ROOTERR_UPDATE = "FALSE",
 
   parameter [31:0]  BAR0 = 32'hFFF00004,
@@ -117,13 +117,13 @@ module pcie_7x_0_core_top # (
   parameter         DISABLE_SCRAMBLING = "FALSE",
   parameter [11:0]  DSN_BASE_PTR = 12'h170,
   parameter [11:0]  DSN_CAP_NEXTPTR = 12'h180,
-  parameter         DSN_CAP_ON = "TRUE",
+  parameter         DSN_CAP_ON = "FALSE",
 
   parameter [10:0]  ENABLE_MSG_ROUTE = 11'b00000000000,
   parameter         ENABLE_RX_TD_ECRC_TRIM = "FALSE",
   parameter [31:0]  EXPANSION_ROM = 32'h00000000,
-  parameter [5:0]   EXT_CFG_CAP_PTR = 6'h3F,
-  parameter [9:0]   EXT_CFG_XP_CAP_PTR = 10'h3FF,
+  parameter [5:0]   EXT_CFG_CAP_PTR = 6'h2A,
+  parameter [9:0]   EXT_CFG_XP_CAP_PTR = 10'h2A,
   parameter [7:0]   HEADER_TYPE = 8'h00,
   parameter [7:0]   INTERRUPT_PIN = 8'h1,
 
@@ -235,7 +235,7 @@ module pcie_7x_0_core_top # (
 
   parameter [11:0]  VC_BASE_PTR = 12'h140,
   parameter [11:0]  VC_CAP_NEXTPTR = 12'h170,
-  parameter         VC_CAP_ON = "TRUE",
+  parameter         VC_CAP_ON = "FALSE",
   parameter         VC_CAP_REJECT_SNOOP_TRANSACTIONS = "FALSE",
 
   parameter         VC0_CPL_INFINITE = "TRUE",
@@ -250,7 +250,7 @@ module pcie_7x_0_core_top # (
 
   parameter [11:0]  VSEC_BASE_PTR = 12'h180,
   parameter [11:0]  VSEC_CAP_NEXTPTR = 12'h000,
-  parameter         VSEC_CAP_ON = "TRUE",
+  parameter         VSEC_CAP_ON = "FALSE",
 
   parameter         DISABLE_ASPM_L1_TIMER = "FALSE",
   parameter         DISABLE_BAR_FILTERING = "FALSE",
